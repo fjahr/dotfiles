@@ -17,8 +17,8 @@ if tput setaf 1 &> /dev/null; then
     GREY=$(tput setaf 59)
     GREEN2=$(tput setaf 85)
     RED=$(tput setaf 88)
-    YELLOW=$(tput setaf 172)
-    GREEN3=$(tput setaf 28)
+    YELLOW=$(tput setaf 3)
+    GREEN3=$(tput setaf 2)
     PURPLE=$(tput setaf 141)
     WHITE=$(tput setaf 0)
   else
@@ -71,9 +71,9 @@ minutes() {
     if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 30 ]; then
       local COLOR=$RED
     elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 10 ]; then
-      local COLOR=$GITYELLOW
+      local COLOR=$YELLOW
     else
-      local COLOR=$GITGREEN
+      local COLOR=$GREEN3
     fi
     local SINCE_LAST_COMMIT="${COLOR}$(minutes_since_last_commit)m$NORMAL"
     echo ${SINCE_LAST_COMMIT}
