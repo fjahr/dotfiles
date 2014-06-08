@@ -1,0 +1,89 @@
+alias mou='open -a Mou'
+alias o='open'
+
+alias reload='. ~/.bash_profile'
+alias dotfiles='cd ~/bin/dotfiles'
+alias aliases='subl ~/bin/dotfiles/bash/aliases'
+alias configfile='subl ~/bin/dotfiles/bash/config'
+alias envfile='subl ~/bin/dotfiles/bash/env'
+alias myip='ifconfig -a'
+alias h='history'
+alias hg='history | grep -i'
+
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+alias ~='cd ~'
+
+alias ls='ls -GF'
+alias la='ls -al'
+alias s='subl'
+alias n='node'
+alias nm='nodemon'
+
+alias pgstart='postgres -D /Users/FJ/.rvm/var/postgres'
+alias pgstop='pg_ctl -D /Users/FJ/.rvm/var/postgres stop'
+
+alias r='rails'
+alias raisl='rails'
+alias rc='rails console'
+alias rcp='RAILS_ENV=production rails c'
+alias rct='RAILS_ENV=test rails c'
+alias rcd='RAILS_ENV=development rails c'
+alias devlog='tail -1000 log/development.log'
+alias devlog-superslow='tail -10000 log/development.log | grep "Load ([0-9][0-9][0-9].[0-9]ms)"'
+alias devlog-slow='tail -10000 log/development.log | grep "Load ([0-9][0-9].[0-9]ms)"'
+alias devlog-5ms='tail -10000 log/development.log | grep "Load ([5-9].[0-9]ms)"'
+alias devlog-1ms='tail -10000 log/development.log | grep "Load ([1-9].[0-9]ms)"'
+alias countselect='cat log/development.log | grep -i "SELECT" | wc -l'
+
+alias rk="rake"
+alias rsp="rspec"
+alias rdb="rake db:migrate db:test:prepare"
+
+alias be="bundle exec"
+alias b="bundle"
+alias bi="bundle install"
+
+alias rebase='git pull --rebase origin master'
+alias commit='git commit -m'
+alias branch='git checkout -b'
+alias master='git checkout master'
+alias reb='git pull --rebase origin master'
+alias com='git commit -m'
+alias bra='git checkout -b'
+alias mas='git checkout master'
+alias gm='git merge'
+alias push='git push'
+alias pull='git pull'
+alias gaa='git add .'
+alias gco='git checkout'
+alias gs='git status'
+alias gsh='git show'
+alias gd='git diff'
+alias gdh='git diff HEAD'
+alias gp='git push'
+alias gpl='git pull'
+alias gr='git pull --rebase origin master'
+alias gc='git commit -m'
+alias gca='git commit -am'
+alias gl='git log'
+alias gl1='git log -1 --stat'
+alias ga='git add'
+alias gus='git reset HEAD'
+alias gb='git branch'
+alias grm='git rm -r'
+alias grmall='git rm $(git ls-files --deleted)'
+alias grs='git reset --soft'
+alias grh='git reset --hard'
+alias gbd='git branch -D'
+alias brad='git branch -D'
+
+alias gst='git stash'
+alias gsta='git stash apply'
+alias gstd='git stash drop'
+alias gsts='git stash show'
+alias gstl='git stash list'
+alias gstc='git stash clear'c
