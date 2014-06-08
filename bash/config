@@ -85,3 +85,5 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 export HISTCONTROL=ignoreboth
 export HISTSIZE=10000
+
+export REPORTTIME=10

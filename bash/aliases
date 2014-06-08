@@ -1,12 +1,18 @@
 alias mou='open -a Mou'
 alias o='open'
 
+alias zr='zip -r'
+
+alias tu='top -o cpu'
+alias tu='top -o size'
+
 alias reload='. ~/.bash_profile'
 alias dotfiles='cd ~/bin/dotfiles'
 alias aliases='subl ~/bin/dotfiles/bash/aliases'
 alias configfile='subl ~/bin/dotfiles/bash/config'
 alias envfile='subl ~/bin/dotfiles/bash/env'
 alias myip='ifconfig -a'
+
 alias h='history'
 alias hg='history | grep -i'
 
@@ -42,6 +48,7 @@ alias countselect='cat log/development.log | grep -i "SELECT" | wc -l'
 alias rk="rake"
 alias rsp="rspec"
 alias rdb="rake db:migrate db:test:prepare"
+alias rt="rake -T"
 
 alias be="bundle exec"
 alias b="bundle"
