@@ -32,6 +32,8 @@ alias nm='nodemon'
 alias pgstart='postgres -D /Users/FJ/.rvm/var/postgres'
 alias pgstop='pg_ctl -D /Users/FJ/.rvm/var/postgres stop'
 
+alias elstart='elasticsearch --config=/Users/FJ/.rvm/opt/elasticsearch/config/elasticsearch.yml'
+
 alias r='rails'
 alias raisl='rails'
 alias rc='rails console'
@@ -49,6 +51,7 @@ alias rk="rake"
 alias rsp="rspec"
 alias rdb="rake db:migrate db:test:prepare"
 alias rt="rake -T"
+alias rr="rake routes"
 
 alias be="bundle exec"
 alias b="bundle"
@@ -70,6 +73,7 @@ alias gco='git checkout'
 alias gs='git status'
 alias gsh='git show'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
 alias gp='git push'
 alias gpl='git pull'
