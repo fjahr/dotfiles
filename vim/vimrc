@@ -14,6 +14,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-rake.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'thoughtbot/vim-rspec'
 
@@ -67,6 +68,9 @@ colorscheme railscasts
 " use the_silver_searcher for vim.ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" set rspec runner for vim-rspec
+let g:rspec_runner = "os_x_iterm"
+
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
@@ -84,6 +88,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 map 'nt :NERDTree<CR>
 map 'q :q<CR>
+map 'b :b#<CR>
 map 's :source ~/.vimrc<CR>
 vmap 'b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 nnoremap \c :set cursorline! cursorcolumn!<CR>
@@ -99,3 +104,5 @@ nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 nnoremap <Leader>a :call RunAllSpecs()<CR>
+
+iabbrev pry require 'pry'; binding.pry
