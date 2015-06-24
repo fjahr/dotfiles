@@ -1,5 +1,6 @@
 alias mou='open -a Mou'
 alias o='open'
+alias v='vi .'
 
 alias zr='zip -r'
 
@@ -15,6 +16,7 @@ alias myip='ifconfig -a'
 
 alias h='history'
 alias hg='history | grep -i'
+alias fp='ps auwwx | grep -i'
 
 alias ..="cd .."
 alias ..2="cd ../.."
@@ -29,8 +31,8 @@ alias s='subl'
 alias n='node'
 alias nm='nodemon'
 
-alias pgstart='postgres -D /Users/FJ/.rvm/var/postgres'
-alias pgstop='pg_ctl -D /Users/FJ/.rvm/var/postgres stop'
+alias pgstart='postgres -D /usr/local/var/postgres'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop'
 
 alias elstart='elasticsearch --config=/Users/FJ/.rvm/opt/elasticsearch/config/elasticsearch.yml'
 
@@ -49,7 +51,7 @@ alias countselect='cat log/development.log | grep -i "SELECT" | wc -l'
 
 alias rk="rake"
 alias rsp="rspec"
-alias rdb="rake db:migrate db:test:prepare"
+alias rdb="rake db:migrate && rake db:test:clone"
 alias rt="rake -T"
 alias rr="rake routes"
 

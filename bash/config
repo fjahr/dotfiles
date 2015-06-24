@@ -84,6 +84,9 @@ export PS1="\[$GREEN2\]\t: \[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 export HISTCONTROL=ignoreboth
+export HISTCONTROL=erasedubs
 export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTTIMEFORMAT='%F %T - '
 
 export REPORTTIME=10

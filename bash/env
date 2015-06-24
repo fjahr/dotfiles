@@ -1,13 +1,19 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/bin:$PATH
+PATH=$PATH:$HOME/.rvm/bin
 
+export PATH="~/.homebrew/Cellar:$PATH"
+export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=$PATH:~/bin
-export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+GOROOT="/usr/local/go"
 export PATH=$PATH:~/.wunderscale/bin
 export PATH=$PATH:~/bin/jruby-1.5.6/bin
+export PATH=$PATH:~/.rvm
 
-export EDITOR=subl
+export EDITOR="subl -w"
+
+export FORCE_INLINE_PROCESSING=1
+
+export PGHOST=localhost
