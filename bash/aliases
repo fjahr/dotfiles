@@ -34,8 +34,6 @@ alias nm='nodemon'
 alias pgstart='postgres -D /usr/local/var/postgres'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop'
 
-alias elstart='elasticsearch --config=/Users/FJ/.rvm/opt/elasticsearch/config/elasticsearch.yml'
-
 alias r='rails'
 alias raisl='rails'
 alias rc='rails console'
@@ -50,7 +48,7 @@ alias devlog-1ms='tail -10000 log/development.log | grep "Load ([1-9].[0-9]ms)"'
 alias countselect='cat log/development.log | grep -i "SELECT" | wc -l'
 
 alias rk="rake"
-alias rsp="rspec"
+alias rsp="rspec --format Fuubar --color"
 alias rdb="rake db:migrate && rake db:test:clone"
 alias rt="rake -T"
 alias rr="rake routes"

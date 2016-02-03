@@ -1,7 +1,6 @@
 export PATH=/usr/local/bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin
+PATH=$PATH:$HOME/bin
 
-export PATH="~/.homebrew/Cellar:$PATH"
 export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=$PATH:~/bin
@@ -10,10 +9,10 @@ export PATH=$PATH:$GOPATH/bin
 GOROOT="/usr/local/go"
 export PATH=$PATH:~/.wunderscale/bin
 export PATH=$PATH:~/bin/jruby-1.5.6/bin
-export PATH=$PATH:~/.rvm
 
 export EDITOR="subl -w"
 
 export FORCE_INLINE_PROCESSING=1
+export MYSQL_USE_LOCAL_INFILE="false"
 
 export PGHOST=localhost
