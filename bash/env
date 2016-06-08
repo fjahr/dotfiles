@@ -1,6 +1,9 @@
 export PATH=/usr/local/bin:$PATH
 PATH=$PATH:$HOME/bin
 
+export AWS_CREDENTIALS_PATH=$HOME/.phrase/config.json
+export PATH=$HOME/.rbenv/shims:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH
 export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=$PATH:~/bin

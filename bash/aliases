@@ -1,5 +1,9 @@
+alias aws-dynport='AWS_CREDENTIALS_PATH=$HOME/.phrase/config.json aws-mfa $@'
+
 alias mou='open -a Mou'
 alias o='open'
+alias vi='/usr/local/Cellar/vim/7.4.1301/bin/vim'
+alias vim='/usr/local/Cellar/vim/7.4.1301/bin/vim'
 alias v='vi .'
 
 alias zr='zip -r'
@@ -98,3 +102,9 @@ alias gstd='git stash drop'
 alias gsts='git stash show'
 alias gstl='git stash list'
 alias gstc='git stash clear'c
+
+alias p='python3'
+
+alias e='elixir'
+alias ec='iex -S mix'
+alias mt='mix test'

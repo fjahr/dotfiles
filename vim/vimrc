@@ -18,6 +18,9 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-rake.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-fugitive'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'rust-lang/rust.vim'
 
 Bundle 'kana/vim-vspec'
 Plugin 'kana/vim-textobj-user'
@@ -72,9 +75,14 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " set rspec runner for vim-rspec
 let g:rspec_runner = "os_x_iterm"
+let g:rspec_command = "!bundle exec rspec -f d -c {spec}"
 
 " nerdtree shows hidden files in drawer
 let NERDTreeShowHidden=1
+
+" enable elixir syntax checking
+let g:syntastic_enable_elixir_checker = 1
+let g:syntastic_elixir_checkers = ['elixir']
 
 " The Silver Searcher
 if executable('ag')
@@ -118,3 +126,6 @@ nnoremap <Leader>l :call RunLastSpec()<CR>
 nnoremap <Leader>a :call RunAllSpecs()<CR>
 
 iabbrev pry require 'pry'; binding.pry
+
+map 'e :!mix test<CR>
+map 'r :!mix test %<CR>
