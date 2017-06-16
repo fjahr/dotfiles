@@ -4,6 +4,7 @@ PATH=$PATH:$HOME/bin
 export AWS_CREDENTIALS_PATH=$HOME/.phrase/config.json
 export PATH=$HOME/.rbenv/shims:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=$PATH:~/bin
@@ -12,6 +13,8 @@ export PATH=$PATH:$GOPATH/bin
 GOROOT="/usr/local/go"
 export PATH=$PATH:~/.wunderscale/bin
 export PATH=$PATH:~/bin/jruby-1.5.6/bin
+export PATH=$PATH:/Library/TeX/texbin/
+export VIMRUNTIME=/usr/share/vim/vim74
 
 export EDITOR="subl -w"
 
@@ -19,3 +22,7 @@ export FORCE_INLINE_PROCESSING=1
 export MYSQL_USE_LOCAL_INFILE="false"
 
 export PGHOST=localhost
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools

@@ -9,6 +9,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'kchmck/vim-coffee-script'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-sensible'
 Plugin 'majutsushi/tagbar'
@@ -20,6 +21,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'avdgaag/vim-phoenix'
 Plugin 'rust-lang/rust.vim'
 
 Bundle 'kana/vim-vspec'
@@ -35,12 +37,14 @@ Bundle 'tcomment'
 Bundle 'git://github.com/bling/vim-airline.git'
 Bundle 'christoomey/vim-tmux-navigator'
 Plugin 'fatih/vim-go'
+Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 
+
+syntax enable
 filetype plugin indent on
 
-syntax on
 set history=10000
 set nocompatible
 set encoding=utf-8
@@ -75,7 +79,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " set rspec runner for vim-rspec
 let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "!bundle exec rspec -f d -c {spec}"
+let g:rspec_command = "!bundle exec rspec --format Fuubar --color {spec}"
 
 " nerdtree shows hidden files in drawer
 let NERDTreeShowHidden=1
@@ -90,7 +94,7 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore-dir=_build --ignore-dir=node_modules'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
@@ -103,6 +107,9 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 map 'm :w<CR>:make -f Makefile.wip<CR>
 
+set clipboard=unnamed
+
+map 'x :!elixir %<CR>
 map 'nt :NERDTree<CR>
 map 'q :q<CR>
 map 'b :b#<CR>
@@ -124,6 +131,8 @@ nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 nnoremap <Leader>a :call RunAllSpecs()<CR>
+
+inoremap jj <ESC>
 
 iabbrev pry require 'pry'; binding.pry
 
