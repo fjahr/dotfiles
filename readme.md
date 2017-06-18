@@ -1,9 +1,12 @@
 # content ~/.bashrc
 
+```
 source ~/bin/dotfiles/bashrc
+```
 
 # content ~/.bash_profile
 
+```
 if [ -f `brew --prefix`/etc/bash_completion ];
 then
   source `brew --prefix`/etc/bash_completion
@@ -12,3 +15,10 @@ if [ -f ~/.bashrc ];
 then
 	source ~/.bashrc
 fi
+```
+
+# content ~/.vimrc
+
+```
+source ~/bin/dotfiles/vim/vimrc
+```
