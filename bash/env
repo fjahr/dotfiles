@@ -14,7 +14,7 @@ GOROOT="/usr/local/go"
 export PATH=$PATH:~/.wunderscale/bin
 export PATH=$PATH:~/bin/jruby-1.5.6/bin
 export PATH=$PATH:/Library/TeX/texbin/
-export VIMRUNTIME=/usr/share/vim/vim74
+export VIMRUNTIME=/usr/share/vim/vim80
 
 export EDITOR="subl -w"
 
