@@ -88,3 +88,7 @@ export HISTFILESIZE=10000
 export HISTTIMEFORMAT='%F %T - '
 
 export REPORTTIME=10
+
+export LSCOLORS="DxfxcxdxBxegecabagacad"
+
+alias ls='ls -lGH'

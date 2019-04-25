@@ -135,7 +135,7 @@ nnoremap <Leader>a :call RunAllSpecs()<CR>
 
 inoremap jj <ESC>
 
-iabbrev pry require 'pry'; binding.pry
+" iabbrev pry require 'pry'; binding.pry
 
 map 'e :!mix test<CR>
 map 'r :!mix test %<CR>

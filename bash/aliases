@@ -105,6 +105,7 @@ alias gstl='git stash list'
 alias gstc='git stash clear'c
 
 alias p='python3'
+alias python='python3'
 
 alias e='elixir'
 alias ec='iex -S mix'
