@@ -91,6 +91,6 @@ export REPORTTIME=10
 
 export LSCOLORS="DxfxcxdxBxegecabagacad"
 
-export VIMRUNTIME="/usr/local/Cellar/vim/8.1.1200/share/vim/vim81/"
+export VIMRUNTIME="/usr/local/Cellar/vim/8.1.1550/share/vim/vim81/"
 
 alias ls='ls -lGH'

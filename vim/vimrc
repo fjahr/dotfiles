@@ -8,7 +8,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Bundle 'slim-template/vim-slim.git'
-Bundle 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-sensible'
@@ -24,10 +23,8 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'avdgaag/vim-phoenix'
 Plugin 'rust-lang/rust.vim'
 Plugin 'jpo/vim-railscasts-theme'
-
 Bundle 'kana/vim-vspec'
 Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
 
 Plugin 'jamessan/vim-gnupg'
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -39,6 +36,10 @@ Bundle 'git://github.com/bling/vim-airline.git'
 Bundle 'christoomey/vim-tmux-navigator'
 Plugin 'fatih/vim-go'
 Plugin 'sheerun/vim-polyglot'
+Bundle 'ludovicchabant/vim-gutentags'
+
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()
 
@@ -52,7 +53,7 @@ set encoding=utf-8
 set showcmd
 set nu
 set list
-set nowrap
+" set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -75,6 +76,10 @@ set tags=./tags;
 
 colorscheme railscasts
 
+" let dark_pluscolorspace=256  " Access colors present in 256 colorspace
+" set termguicolors
+" colorscheme dark_plus
+
 " use the_silver_searcher for vim.ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
@@ -88,6 +93,10 @@ let NERDTreeShowHidden=1
 " enable elixir syntax checking
 let g:syntastic_enable_elixir_checker = 1
 let g:syntastic_elixir_checkers = ['elixir']
+" cpp syntax checking
+let g:ycm_global_ycm_extra_conf = '~/bin/dotfiles/vim/.ycm_extra_conf.py'
+" " let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_max_diagnostics_to_display = 0
 
 " The Silver Searcher
 if executable('ag')

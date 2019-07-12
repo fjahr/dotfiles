@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BASE_FLAGS	vim/.ycm_extra_conf2.py	/^BASE_FLAGS = [$/;"	v
+DirectoryOfThisScript	vim/.ycm_extra_conf3.py	/^def DirectoryOfThisScript():$/;"	f
+FindNearest	vim/.ycm_extra_conf2.py	/^def FindNearest(path, target, build_folder):$/;"	f
+FlagsForClangComplete	vim/.ycm_extra_conf2.py	/^def FlagsForClangComplete(root):$/;"	f
+FlagsForCompilationDatabase	vim/.ycm_extra_conf2.py	/^def FlagsForCompilationDatabase(root, filename):$/;"	f
+FlagsForFile	vim/.ycm_extra_conf2.py	/^def FlagsForFile(filename):$/;"	f
+FlagsForFile	vim/.ycm_extra_conf3.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f
+FlagsForInclude	vim/.ycm_extra_conf2.py	/^def FlagsForInclude(root):$/;"	f
+GetCompilationInfoForFile	vim/.ycm_extra_conf2.py	/^def GetCompilationInfoForFile(database, filename):$/;"	f
+GetCompilationInfoForFile	vim/.ycm_extra_conf3.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+HEADER_DIRECTORIES	vim/.ycm_extra_conf2.py	/^HEADER_DIRECTORIES = [$/;"	v
+HEADER_EXTENSIONS	vim/.ycm_extra_conf2.py	/^HEADER_EXTENSIONS = [$/;"	v
+IsHeaderFile	vim/.ycm_extra_conf2.py	/^def IsHeaderFile(filename):$/;"	f
+IsHeaderFile	vim/.ycm_extra_conf3.py	/^def IsHeaderFile( filename ):$/;"	f
+LoadSystemIncludes	vim/.ycm_extra_conf3.py	/^def LoadSystemIncludes():$/;"	f
+MakeRelativePathsInFlagsAbsolute	vim/.ycm_extra_conf2.py	/^def MakeRelativePathsInFlagsAbsolute(flags, working_directory):$/;"	f
+MakeRelativePathsInFlagsAbsolute	vim/.ycm_extra_conf3.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+SOURCE_DIRECTORIES	vim/.ycm_extra_conf2.py	/^SOURCE_DIRECTORIES = [$/;"	v
+SOURCE_EXTENSIONS	vim/.ycm_extra_conf2.py	/^SOURCE_EXTENSIONS = [$/;"	v
+SOURCE_EXTENSIONS	vim/.ycm_extra_conf3.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+Settings	vim/.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
+compilation_database_folder	vim/.ycm_extra_conf3.py	/^compilation_database_folder = ''$/;"	v
+compilation_database_folder	vim/.ycm_extra_conf3.py	/^compilation_database_folder = os.path.join(scriptPath, 'build')$/;"	v
+database	vim/.ycm_extra_conf3.py	/^  database = None$/;"	v
+database	vim/.ycm_extra_conf3.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+database	vim/.ycm_extra_conf3.py	/^database = None if not os.path.exists(compilation_database_folder) else ycm_core.CompilationDatabase(compilation_database_folder)$/;"	v
+flags	vim/.ycm_extra_conf3.py	/^flags = flags + systemIncludes;$/;"	v
+fnmatch	vim/.ycm_extra_conf2.py	/^import fnmatch$/;"	i
+logging	vim/.ycm_extra_conf2.py	/^import logging$/;"	i
+os	vim/.ycm_extra_conf2.py	/^import os$/;"	i
+os	vim/.ycm_extra_conf2.py	/^import os.path$/;"	i
+os	vim/.ycm_extra_conf3.py	/^import os$/;"	i
+path	vim/.ycm_extra_conf2.py	/^import os.path$/;"	i
+re	vim/.ycm_extra_conf2.py	/^import re$/;"	i
+re	vim/.ycm_extra_conf3.py	/^import re$/;"	i
+scriptPath	vim/.ycm_extra_conf3.py	/^scriptPath = os.path.dirname(os.path.abspath(__file__));$/;"	v
+subprocess	vim/.ycm_extra_conf3.py	/^import subprocess$/;"	i
+systemIncludes	vim/.ycm_extra_conf3.py	/^systemIncludes = LoadSystemIncludes();$/;"	v
+ycm_core	vim/.ycm_extra_conf2.py	/^import ycm_core$/;"	i
+ycm_core	vim/.ycm_extra_conf3.py	/^import ycm_core$/;"	i
